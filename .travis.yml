@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - 'stable'
+  - '8'
+  - '6'
+
+sudo: false
+
+branches:
+  only:
+  - master
+
+install:
+  - npm uninstall typescript --no-save
+  - npm uninstall tslint --no-save
+  - npm install
+
+script:
+  - npm run test:ci
+
+cache:
+  directories:
+    - node_modules
+  yarn: true
+
+git:
+  depth: 1
