@@ -1,0 +1,39 @@
+{
+  "name": "is-equally-spaced",
+  "version": "0.1.0",
+  "description": "IsEquallySpaced is a simple utility function that given an array of numbers, evaluates wether or not every element is equally spaced, i.e. if every subsequent couple of numbers in the array has the same distance.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "prebuild": "npm run clean && npm run lint",
+    "build": "tsc --declaration",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest --coverage --verbose",
+    "test:ci": "npm run build && npm run test",
+    "watch-test": "npm run test -- --watchAll"
+  },
+  "files": [
+    "./dist"
+  ],
+  "keywords": [
+    "algorithm",
+    "array",
+    "typescript",
+    "vector",
+    "performance"
+  ],
+  "author": "Alberto Schiabel <alberto.schiabel@gmail.com> (https://github.com/jkomyno)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "jest": "^23.6.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "fixed-math": "^0.1.1"
+  }
+}
