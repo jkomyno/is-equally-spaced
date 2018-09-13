@@ -14,7 +14,7 @@
     "watch-test": "npm run test -- --watchAll"
   },
   "files": [
-    "./dist"
+    "dist/"
   ],
   "keywords": [
     "algorithm",
