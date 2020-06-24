@@ -24,7 +24,7 @@ yarn add is-equally-spaced
 
 ## Typings
 
-This package is written in TypeScript and is designed to be compatible with NodeJS 6+.
+This package is written in TypeScript.
 The following types are exported:
 
 ```typescript
